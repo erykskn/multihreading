@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(final String[] args) {
         final Processor processor = new Processor();
-        final Thread thread = new Thread(new Runnable() {
+        Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -16,7 +16,7 @@ public class Main {
             }
         });
 
-        final Thread thread2 = new Thread(new Runnable() {
+        Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
